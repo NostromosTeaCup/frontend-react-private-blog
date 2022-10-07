@@ -1,0 +1,11 @@
+article {
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    margin: 46px;
+    padding: 24px;
+}
+
+article h1,
+article p {
+    text-transform: capitalize;
+}

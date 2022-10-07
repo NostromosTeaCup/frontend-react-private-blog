@@ -1,0 +1,20 @@
+nav {
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a,
+nav a:visited {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 300px;
+}
