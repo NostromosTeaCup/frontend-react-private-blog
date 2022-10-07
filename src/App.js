@@ -4,7 +4,8 @@ import './App.css';
 import Overview from './pages/Overview/Overview';
 import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
-import BlogPost from './pages/BlogPost/BlogPost'
+import BlogPost from './pages/BlogPost/BlogPost';
+import Navigation from "./components/Navigation";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div>
-      Maak hier jouw prachtige blog-applicatie!
+     <Navigation/>
     </div>
   );
 }
