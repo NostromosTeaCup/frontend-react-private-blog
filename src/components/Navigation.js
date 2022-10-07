@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 function Navigation({ isAuth, toggleAuth }) {
     const history = useHistory();
@@ -13,17 +13,17 @@ function Navigation({ isAuth, toggleAuth }) {
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/">
+                    <Link to="/">
                         Home
-                    </NavLink>
+                    </Link>
                 </li>
                 {/*Is de gebruiker ingelogd? Laat dan de blogposts en uitlog knop zien, en anders alleen de login knop */}
                 {isAuth === true
                     ? <>
                         <li>
-                            <NavLink to="/blogposts">
+                            <Link to="/blogposts">
                                 Blogposts
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
                             <button type="button" onClick={signOut}>
@@ -33,9 +33,9 @@ function Navigation({ isAuth, toggleAuth }) {
                     </>
                     :
                     <li>
-                        <NavLink to="/login">
+                        <Link to="/login">
                             Login
-                        </NavLink>
+                        </Link>
                     </li>}
             </ul>
         </nav>
